@@ -4,31 +4,13 @@ Regex or regular expressions search for a sequence of characters that is search 
 
 ## Summary
 
-Matching a Phone Number 
+Matching a Hex Value
 
-During this tutorial I will be explaining how to match an phone number using regex or regular expressions. The regex used will be set up to search for different variations of phone numbers to account for different possibilities of inputs.
+During this tutorial I will be explaining how to match an Hex Values using regex or regular expressions. The regex used will be set up to match different variations of hex formats. The two formats are Hex Triplet Format and Shorthand Hex Format.
 
 Regular Expression used
 
-^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})?[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$
-
-Formats used
-
-18001234567
-1 800 123 4567
-+1 800 123-4567
-+86 800 123 4567
-1-800-123-4567
-1(800) 123-4567
-(800)123-4567
-(800) 123-4567
-(800)1234567
-800-123-4567
-800.123.4567
-800 123 4567x1234
-8001234567 x1234
-1    800    123-4567
-1----800----123-4567
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
 
@@ -48,13 +30,34 @@ Formats used
 
 ### Anchors
 
+<mark>/^</mark>#?([a-f0-9]{6}|[a-f0-9]{3})<mark>$/</mark>
+
+In this example the anchors /^ and $/ are highlighted. They are being used to represent the start and ending of our expression. 
 
 
 ### Quantifiers
 
+/^#<mark>?</mark>([a-f0-9]<mark>{6}</mark>|[a-f0-9]<mark>{3}</mark>)$/
+
+In this example the quantifiers used are "?,{}". The quantifiers are highlighted in the expression above. They are used to communicate how many characters are expected in the input for a match to be found. Quantifiers specifiy how many times a character, group or character class must be present in the input. 
+
+
 ### OR Operator
 
+/^#?([a-f0-9]{6}<mark>|</mark>[a-f0-9]{3})$/
+
+In this example the "or" operator is highlighted above. The "or" operator is used with the | element. As we previously discused there are two different types of hex formats (Hex Triplet Format and Shorthand Hex Format). Both of these formats need to be taken into consideration when the expression. By using the "or" operator we are seperating the two character classes so that the hex value could be either 6 or 3 characters in length.
+
+This shows how the "or" operator breaks down both options. As you can see the "or" operator or | seperates the two character classes. 
+
+/^#?(<mark>[a-f0-9]{6}</mark>|<mark>[a-f0-9]{3}</mark>)$/
+
+
 ### Character Classes
+
+/^#?(<mark>[a-f0-9]</mark>{6}|<mark>[a-f0-9]</mark>{3})$/
+
+
 
 ### Flags
 
