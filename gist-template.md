@@ -18,13 +18,8 @@ Regular Expression used
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -57,21 +52,11 @@ This shows how the "or" operator breaks down both options. As you can see the "o
 
 /^#?(<mark>[a-f0-9]</mark>{6}|<mark>[a-f0-9]</mark>{3})$/
 
-
-
-### Flags
-
-### Grouping and Capturing
+In this example we will be discusing character classes. Character classes are companents within our expression that tells us what type of characters to expect. You can see our character classes highlighted above. Both character classes are exactly the same. The only difference is the quantifiers stating the length. In this expression we can see that it searches for letters a-f (the letters used for hex values) and numbers 0-9 (numbers used in hex vaules) in these character classes.
 
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
