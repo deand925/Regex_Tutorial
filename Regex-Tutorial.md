@@ -8,8 +8,7 @@ Matching a Hex Value
 
 During this tutorial I will be explaining how to match an Hex Values using regex or regular expressions. The regex used will be set up to match different variations of hex formats. The two formats are Hex Triplet Format and Shorthand Hex Format.
 
-Regular Expression used
-
+Regular Expression used:
 /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Table of Contents
@@ -56,8 +55,20 @@ In this example we will be discusing character classes. Character classes are co
 
 ### Bracket Expressions
 
+/^#?<mark>([a-f0-9]{6}|[a-f0-9]{3})</mark>$/
+
+In this example you can see we highlighted the bracket expressions. Bracket expressions are used to signigy the begining and end of a character class or quantifier statement. This expression uses parenthesis to define our bracket expression. The character class sits within the bracket expression as we previously discused. 
+
 ### Greedy and Lazy Match
+
+/^#<mark>?</mark>([a-f0-9]{6}|[a-f0-9]{3})$/
+
+In this example we will be dealing with lazy matches. As highlighted above "?" is used to symbolize a lazy match. By using a lazy match we are matching as few times as possible. If we were to use a greedy match it would match for as many match occurances as possible. 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Dean Dunivan
+
+Dean Dunivan is a graduate of San Francisco State University. He studied Sociology before continuing his education with the University of Oregon Coding Certificate Program.
+
+https://github.com/deand925
