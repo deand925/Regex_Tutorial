@@ -19,6 +19,7 @@ Regular Expression used:
 - [Character Classes](#character-classes)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Gist](#gist)
 
 ## Regex Components
 
@@ -72,3 +73,7 @@ Dean Dunivan
 Dean Dunivan is a graduate of San Francisco State University. He studied Sociology before continuing his education with the University of Oregon Coding Certificate Program.
 
 https://github.com/deand925
+
+## Gist
+
+https://gist.github.com/deand925/591d5a70d3ab63c34fc0defef25c952d.js
